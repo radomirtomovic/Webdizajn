@@ -1,17 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 * {
   margin: 0;
   padding: 0;
 }
-a,li {
-  font-family: Arial, Helvetica, sans-serif;
+a,li,h3, p, h3 {
+  font-family: 'Josefin Sans', sans-serif;
 }
 ul {
   list-style: none;
   display: flex;
-}
-#header ul li a {
-  color: #ffbf00;
-  text-decoration: none;
 }
 #header {
   height: 100px;
@@ -22,6 +19,23 @@ ul {
   align-items: center;
   position: relative;
 }
+#header ul li a {
+  color: #ffbf00;
+  text-decoration: none;
+  padding-top: 12px;
+  -webkit-transition: 0.5s;
+}
+#header a:hover {
+  /* 
+  border-top: 1px solid #f45409;
+  color: #f45409; 
+  
+  border-top: 1px solid #f95f00;
+  color: #f95f00;
+   */
+  border-top: 1px solid #ffff00;
+  color: #ffff00;
+}
 #logo {
   height: 100%;
   position: absolute;
@@ -29,53 +43,34 @@ ul {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-
 .navbar {
-  flex-basis: 30%;
+  flex-basis: 40%;
 }
 .navbar ul {
   display: flex;
   justify-content: space-evenly;
   flex-basis: 100%;
 }
-
 .navbar a {
   font-size: 1.6rem;
 }
-#container {
+#content {
   display: flex;
-  justify-content: left;
-  height: 1000px;
+  height: 5000px;
 }
-#standards {
-  flex-basis: 20%;
-  background-color: #ffe24f;
-  height: 100%;
-  background: #f9de98;
-  background: linear-gradient(
-    to right,
-    rgb(255, 212, 103) 5%,
-    hsla(44, 100%, 49%, 1) 50%,
-    hsla(43, 94%, 62%, 1) 95%
-  );
-  border-radius: 10px;
+#piano {
+  height: 400px;
+  background-image: url(../images/jazzpiano.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 1;
 }
-#standards ul {
-  display: block;
+#whatis {
+  font-size: 1.3rem;
+  flex: 1;
+  text-align: justify;
+  padding: 15px;
 }
-#standards li {
-  font-size: 1.2rem;
-  margin-bottom: 5px;
-}
-#standards a {
-  color: #000000;
-  text-decoration: none;
-  color: #6a6a6a;
-}
-.songs {
-  text-indent: 50px;
-  margin-bottom: 10px;
-}
-.songs li {
-  font-style: italic;
+#whatis h3{
+  margin: 10px;
 }
