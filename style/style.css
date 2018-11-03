@@ -2,9 +2,11 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Josefin Sans', sans-serif; /* Po meni ti je bolje da ti svaki element ima isti font */
+  box-sizing: border-box; /* Ovo ti da ne bi imao problema sa width i height ako koristi margin i padding */
 }
-a,li,h3, p, h3 {
-  font-family: 'Josefin Sans', sans-serif;
+body {
+    font-size: 16px; /* Ovo ti treba zbog rem-a */
 }
 ul {
   list-style: none;
@@ -47,8 +49,7 @@ ul {
   flex-basis: 40%;
 }
 .navbar ul {
-  display: flex;
-  justify-content: space-evenly;
+  justify-content: space-evenly; /* Proveri koliko browsera podrzava space-evanly */
   flex-basis: 100%;
 }
 .navbar a {
@@ -56,11 +57,11 @@ ul {
 }
 #content {
   display: flex;
-  height: 5000px;
+  height: 5000px; /* Sredi visinu */
 }
 #piano {
   height: 400px;
-  background-image: url(../images/jazzpiano.jpg);
+  background-image: url('../images/jazzpiano.jpg'); /* Stavljas slike url u navodnike */
   background-repeat: no-repeat;
   background-size: cover;
   flex: 1;
