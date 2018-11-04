@@ -61,7 +61,7 @@ ul {
 }
 #piano {
   height: 400px;
-  background-image: url('../images/jazzpiano.jpg'); /* Stavljas slike url u navodnike */
+  background-image: url('../img/jazzpiano.jpg'); /* Stavljas slike url u navodnike */
   background-repeat: no-repeat;
   background-size: cover;
   flex: 1;
