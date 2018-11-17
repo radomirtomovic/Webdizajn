@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Bitter');
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Josefin Sans', sans-serif; /* Po meni ti je bolje da ti svaki element ima isti font */
-  box-sizing: border-box; /* Ovo ti da ne bi imao problema sa width i height ako koristi margin i padding */
+  font-family: 'Bitter', serif;
+  box-sizing: border-box;
 }
 body {
-    font-size: 16px; /* Ovo ti treba zbog rem-a */
+    font-size: 16px;
 }
 ul {
   list-style: none;
@@ -17,9 +17,9 @@ ul {
   width: 100%;
   background-color: #110f12;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  position: relative;
+  position: fixed;
 }
 #header ul li a {
   color: #ffbf00;
@@ -46,22 +46,36 @@ ul {
   transform: translate(-50%, -50%);
 }
 .navbar {
-  flex-basis: 40%;
+  flex-basis: 37%;
 }
 .navbar ul {
   justify-content: space-evenly; /* Proveri koliko browsera podrzava space-evanly */
   flex-basis: 100%;
+  flex-wrap: wrap;
 }
 .navbar a {
   font-size: 1.6rem;
 }
+.background {
+  height: 660px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 0%;
+  background-size: cover;
+  background-size: 100%;
+}
+.milesDavis {
+  background-image: url("../img/milesdavis.jpg");
+}
+.herbieHancock {
+  background-image: url("../img/herbie-hancock.jpeg")
+}
 #content {
   display: flex;
-  height: 5000px; /* Sredi visinu */
 }
 #piano {
   height: 400px;
-  background-image: url('../img/jazzpiano.jpg'); /* Stavljas slike url u navodnike */
+  background-image: url("../img/jazzpiano.jpg"); /* Stavljas slike url u navodnike */
   background-repeat: no-repeat;
   background-size: cover;
   flex: 1;
