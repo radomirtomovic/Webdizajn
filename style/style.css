@@ -12,6 +12,9 @@ ul {
   list-style: none;
   display: flex;
 }
+
+
+/*header*/
 #header {
   height: 100px;
   width: 100%;
@@ -19,7 +22,8 @@ ul {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  position: fixed;
+  position: sticky;
+  top:0;
 }
 #header ul li a {
   color: #ffbf00;
@@ -28,7 +32,9 @@ ul {
   -webkit-transition: 0.5s;
 }
 #header a:hover {
-  /* 
+  /*
+    options 
+
   border-top: 1px solid #f45409;
   color: #f45409; 
   
@@ -46,16 +52,20 @@ ul {
   transform: translate(-50%, -50%);
 }
 .navbar {
-  flex-basis: 37%;
+  flex-basis: 30%;
 }
 .navbar ul {
-  justify-content: space-evenly; /* Proveri koliko browsera podrzava space-evanly */
+  justify-content: space-around;
   flex-basis: 100%;
   flex-wrap: wrap;
 }
 .navbar a {
   font-size: 1.6rem;
 }
+/*end of header*/
+
+
+/*home page*/
 .background {
   height: 660px;
   background-repeat: no-repeat;
@@ -67,15 +77,12 @@ ul {
 .milesDavis {
   background-image: url("../img/milesdavis.jpg");
 }
-.herbieHancock {
-  background-image: url("../img/herbie-hancock.jpeg")
-}
 #content {
   display: flex;
 }
 #piano {
   height: 400px;
-  background-image: url("../img/jazzpiano.jpg"); /* Stavljas slike url u navodnike */
+  background-image: url("../img/jazzpiano.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   flex: 1;
@@ -89,3 +96,67 @@ ul {
 #whatis h3{
   margin: 10px;
 }
+.herbieHancock {
+  background-image: url("../img/herbie-hancock.jpeg")
+}
+/*end of home page
+
+
+/*theory*/
+#wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#harmony {
+  text-align: justify;
+}
+/*end of theory*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+#footer {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  background-color: #110f12;
+}
+/*end of footer*/
