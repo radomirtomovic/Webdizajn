@@ -1,18 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Bitter');
+@import url("https://fonts.googleapis.com/css?family=Bitter");
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Bitter', serif;
+  font-family: "Bitter", serif;
   box-sizing: border-box;
 }
 body {
-    font-size: 16px;
+  font-size: 16px;
 }
 ul {
   list-style: none;
   display: flex;
 }
-
 
 /*header*/
 #header {
@@ -23,7 +22,7 @@ ul {
   justify-content: space-evenly;
   align-items: center;
   position: sticky;
-  top:0;
+  top: 0;
 }
 #header ul li a {
   color: #ffbf00;
@@ -64,7 +63,6 @@ ul {
 }
 /*end of header*/
 
-
 /*home page*/
 .background {
   height: 660px;
@@ -93,14 +91,24 @@ ul {
   text-align: justify;
   padding: 15px;
 }
-#whatis h3{
+#whatis h3 {
   margin: 10px;
 }
 .herbieHancock {
-  background-image: url("../img/herbie-hancock.jpeg")
+  background-image: url("../img/herbie-hancock.jpeg");
 }
-/*end of home page
+/*end of home page*/
 
+/*history*/
+#history {
+  display: flex;
+  justify-content: center;
+}
+.historyLesson {
+  flex-basis: 90%;
+}
+
+/*end of history*/
 
 /*theory*/
 #wrapper {
@@ -121,45 +129,6 @@ ul {
   margin-bottom: 3rem;
 }
 /*end of theory*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*footer*/
 #footer {
