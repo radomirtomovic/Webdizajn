@@ -12,6 +12,13 @@ ul {
   list-style: none;
   display: flex;
 }
+p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
 
 /*header*/
 #header {
@@ -31,15 +38,6 @@ ul {
   -webkit-transition: 0.5s;
 }
 #header a:hover {
-  /*
-    options 
-
-  border-top: 1px solid #f45409;
-  color: #f45409; 
-  
-  border-top: 1px solid #f95f00;
-  color: #f95f00;
-   */
   border-top: 1px solid #ffff00;
   color: #ffff00;
 }
@@ -86,7 +84,6 @@ ul {
   flex: 1;
 }
 #whatis {
-  font-size: 1.3rem;
   flex: 1;
   text-align: justify;
   padding: 15px;
@@ -101,13 +98,22 @@ ul {
 
 /*history*/
 #history {
-  display: flex;
-  justify-content: center;
 }
 .historyLesson {
-  flex-basis: 90%;
+  width: 90%;
+  margin: 0 auto;
+  text-align: justify;
 }
-
+.historyLesson h3 {
+  margin-bottom: 1.5rem;
+}
+.albums {
+  display: flex;
+  justify-content: space-between;
+}
+.albums li {
+  flex-basis: 15%;
+}
 /*end of history*/
 
 /*theory*/
@@ -118,7 +124,6 @@ ul {
 }
 #harmony {
   flex-basis: 90%;
-  font-size: 1.3rem;
   text-align: justify;
 }
 #harmony h3 {
