@@ -84,7 +84,6 @@ h3 {
   display: flex;
 }
 #piano {
-  height: 400px;
   background-image: url("../img/jazzpiano.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -127,6 +126,7 @@ h3 {
 .album {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 150px;
 }
 .album li {
   flex-basis: 20%;
@@ -157,7 +157,7 @@ h3 {
   margin-top: 20px;
 }
 #harmony h3 {
-  margin-top: 30px;
+  margin: 30px 0;
 }
 #harmony p {
   margin-bottom: 2rem;
