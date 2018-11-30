@@ -14,15 +14,18 @@ ul {
 }
 p {
   font-size: 1.3rem;
-  margin-bottom: 2rem;
 }
-h3 {
-  font-size: 1.5rem;
-  padding: 50px 0px;
+a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.2rem;
 }
 h1 {
   font-size: 2.2rem;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+h3 {
+  font-size: 1.5rem;
 }
 
 /*header*/
@@ -38,7 +41,6 @@ h1 {
 }
 #header ul li a {
   color: #ffbf00;
-  text-decoration: none;
   padding-top: 12px;
   -webkit-transition: 0.5s;
 }
@@ -103,35 +105,41 @@ h1 {
 
 /*history*/
 #history {
-  background-image: url("../img/giantsteps1.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  margin-top: 20px;
 }
 .historyLesson {
-  background-color: rgba(255, 255, 255, 0.5);
   width: 90%;
   margin: 0 auto;
   text-align: justify;
 }
-.historyLesson h1 {
+.historyLesson h1, h3 {
   text-align: center;
 }
-.albums {
+.historyLesson h3 {
+  margin-bottom: 15px;
+}
+.historyLesson p {
+  margin-bottom: 2rem;
+}
+.album {
   display: flex;
   justify-content: space-around;
 }
-.albums li {
-  flex-basis: 15%;
+.album li {
+  flex-basis: 20%;
+  text-align: center;
+  font-style: italic;
 }
-.albums li a img {
-  height: 100px;
+.album img {
+  height: 250px;
 }
 /*end of history*/
 
 /*theory*/
 #wrapper {
-  background-image: url("../img/theorybackground.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -142,11 +150,17 @@ h1 {
 #harmony {
   flex-basis: 90%;
   text-align: justify;
-  background-color: rgba(255, 255, 255, 0.5);
   padding: 15px;
 }
 #harmony h1 {
   text-align: center;
+  margin-top: 20px;
+}
+#harmony h3 {
+  margin-top: 30px;
+}
+#harmony p {
+  margin-bottom: 2rem;
 }
 .chords {
   display: flex;
@@ -154,6 +168,7 @@ h1 {
 }
 .chords p {
   flex-basis: 70%;
+  margin-bottom: 2rem;
 }
 .chordsimg {
   margin-bottom: 3rem;
