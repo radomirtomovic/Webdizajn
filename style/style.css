@@ -76,7 +76,7 @@ input {
 /*end of header*/
 /*home page*/
 .background {
-  height: 660px;
+  height: 700px;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 0%;
@@ -130,6 +130,9 @@ input {
 /*history*/
 .one {
   background-image: url("../img/theorybackground.jpg");
+}
+.two {
+  background-image: url("../img/richardbona.jpg");
 }
 #history {
   background-size: cover;
