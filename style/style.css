@@ -7,6 +7,7 @@
 }
 body {
   font-size: 16px;
+  text-align: justify;
 }
 ul {
   list-style: none;
@@ -33,7 +34,6 @@ input {
   border: none;
   width: 100%;
 }
-
 /*header*/
 #header {
   height: 100px;
@@ -73,7 +73,6 @@ input {
   font-size: 1.6rem;
 }
 /*end of header*/
-
 /*home page*/
 .background {
   height: 660px;
@@ -97,7 +96,7 @@ input {
 }
 #whatis {
   flex: 1;
-  text-align: justify;
+  /* text-align: justify; */
   padding: 15px;
 }
 #whatis h3 {
@@ -106,8 +105,28 @@ input {
 .herbieHancock {
   background-image: url("../img/herbie-hancock.jpeg");
 }
+#news h1 {
+  text-align: center;
+}
+#news h1, #news h2 {
+  margin:30px;
+}
+.article {
+  width:90%;
+  margin:0 auto;
+  padding: 20px;
+  border-bottom: 1px solid #7c7c7c;
+  margin-bottom: 3rem;
+}
+.newscontent {
+  display: flex;
+}
+.newscontent img {
+  margin-right: 20px;
+  width: 297px;
+  height:170px;
+}
 /*end of home page*/
-
 /*history*/
 .one {
   background-image: url("../img/theorybackground.jpg");
@@ -120,13 +139,14 @@ input {
 .historyLesson {
   width: 90%;
   margin: 0 auto;
-  text-align: justify;
+  /* text-align: justify; */
 }
 .historyLesson h1, .historyLesson h3 {
   text-align: center;
 }
 .historyLesson h3 {
   margin-bottom: 15px;
+  font-size: 1.7rem;
 }
 .historyLesson p {
   margin-bottom: 2rem;
@@ -140,7 +160,10 @@ input {
   flex-basis: 10%;
   text-align: center;
   font-style: italic;
-
+  font-weight: bold;
+}
+.album li a {
+  font-size: 1.4rem;
 }
 .album img {
   height: 250px;
@@ -148,8 +171,8 @@ input {
   box-shadow: -13px -8px 21px -2px rgba(125,125,125,1);
   margin-bottom: 1rem;
 }
+#news
 /*end of history*/
-
 /*theory*/
 #wrapper {
   background-size: cover;
@@ -161,7 +184,7 @@ input {
 }
 #harmony {
   flex-basis: 90%;
-  text-align: justify;
+  /* text-align: justify; */
   padding: 15px;
 }
 #harmony h1 {
@@ -172,28 +195,28 @@ input {
   margin: 30px 0;
 }
 #harmony p {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 .chords {
   display: flex;
   justify-content: space-between;
   margin-bottom: 5rem;
-}
-
-.chords:nth-child(odd) p {
-  order: -1;
+  align-items: center;
+  border-bottom: 1px solid #7c7c7c;
 }
 .chords p {
   flex-basis: 70%;
   margin-bottom: 2rem;
 }
+.chords:nth-child(even) p {
+  order: 2;
+}
 /*end of theory*/
-
 /*about*/
 #about {
   width: 90%;
   margin: 0 auto;
-  text-align: justify;
+  /* text-align: justify; */
 }
 #about h1 {
   margin-left: 220px;
@@ -242,7 +265,6 @@ input {
   padding: 15px;
 }
 /*end of about*/
-
 /*footer*/
 #footer {
   width: 100%;
@@ -252,37 +274,31 @@ input {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top:2rem;
 }
 #footer ul {
-  /* margin-top: 30px; */
   width: 30%;
-  margin: -30px auto 0 auto;
+  margin: 25px auto;
   justify-content: space-between;
 }
 #footer p, #footer p a  {
   color: #ffffff;
 }
-
-#footer p a:hover {
-
-}
-
-
 .fab, .fas {
   font-size: 2.2rem;
   color: #ffffff;
   transition: 0.3s;
 }
-.fejs:hover
-{
+.fejs:hover {
   color: #4267B2;
 }
-.jutjub:hover
-{
+.jutjub:hover {
   color: #ff0000;
 }
-.sajitmap:hover
-{
+.githab:hover {
+  color: #007C00;
+}
+.sajitmap:hover {
   color: #a33f6b;
 }
-/*end of footer*/
+/*end of footer*/ 
