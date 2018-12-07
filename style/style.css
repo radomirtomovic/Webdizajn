@@ -43,6 +43,7 @@ input {
   justify-content: space-evenly;
   align-items: center;
   position: sticky;
+  z-index: 100;
   top: 0;
 }
 #header ul li a {
@@ -96,7 +97,6 @@ input {
 }
 #whatis {
   flex: 1;
-  /* text-align: justify; */
   padding: 15px;
 }
 #whatis h3 {
@@ -139,7 +139,6 @@ input {
 .historyLesson {
   width: 90%;
   margin: 0 auto;
-  /* text-align: justify; */
 }
 .historyLesson h1, .historyLesson h3 {
   text-align: center;
@@ -175,16 +174,12 @@ input {
 /*end of history*/
 /*theory*/
 #wrapper {
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  width: 100%;
   display: flex;
   justify-content: center;
 }
 #harmony {
-  flex-basis: 90%;
-  /* text-align: justify; */
+  width: 80%;
+  margin: 0 auto;
   padding: 15px;
 }
 #harmony h1 {
@@ -207,6 +202,14 @@ input {
 .chords p {
   flex-basis: 70%;
   margin-bottom: 2rem;
+}
+.chords a {
+  margin: auto;
+  transform: translateY(-30%);
+}
+.chords a img {
+  width: 100%;
+  height: 100%;
 }
 .chords:nth-child(even) p {
   order: 2;
