@@ -85,6 +85,18 @@ input {
 }
 .milesDavis {
   background-image: url("../img/milesdavis.jpg");
+  color: #ffffff;
+  display: flex;
+}
+.milesDavis h1 {
+  margin: 150px 350px;
+}
+#map {
+  flex: 1;
+  display: flex;
+  margin: auto;
+  height: 400px;
+  background-color: grey;
 }
 #content {
   display: flex;
@@ -105,26 +117,35 @@ input {
 .herbieHancock {
   background-image: url("../img/herbie-hancock.jpeg");
 }
-#news h1 {
+#news h2 {
+  margin-top: 30px;
   text-align: center;
 }
-#news h1, #news h2 {
-  margin:30px;
+#news h1,
+#news h3 {
+  margin: 30px;
 }
 .article {
-  width:90%;
-  margin:0 auto;
+  width: 90%;
+  margin: 0 auto;
   padding: 20px;
   border-bottom: 1px solid #7c7c7c;
   margin-bottom: 3rem;
 }
 .newscontent {
   display: flex;
+  min-height: 230px;
+}
+.newscontent p {
+  width: 60%;
+  word-spacing: 1.0;
+  line-height: 1.6rem;
+  height: 100%;
 }
 .newscontent img {
   margin-right: 20px;
-  width: 297px;
-  height:170px;
+  width: 30%;
+  height: 100%;
 }
 /*end of home page*/
 /*history*/
@@ -143,11 +164,13 @@ input {
   width: 90%;
   margin: 0 auto;
 }
-.historyLesson h1, .historyLesson h3 {
+.historyLesson h1,
+.historyLesson h3 {
   text-align: center;
 }
 .historyLesson h3 {
   margin-bottom: 15px;
+  margin-top: 15px;
   font-size: 1.7rem;
 }
 .historyLesson p {
@@ -169,8 +192,8 @@ input {
 }
 .album img {
   height: 250px;
-  display:block;
-  box-shadow: -13px -8px 21px -2px rgba(125,125,125,1);
+  display: block;
+  box-shadow: -13px -8px 21px -2px rgba(125, 125, 125, 1);
   margin-bottom: 1rem;
 }
 #news
@@ -235,21 +258,51 @@ input {
   height: 220px;
   margin-bottom: 20px;
 }
+#contact_us {
+  margin: 30px 0;
+  text-align: center;
+}
+#wrapper_flex {
+  display: flex;
+  margin: 0 50px;
+}
 #contact {
+  flex: 1;
   display: flex;
   justify-content: center;
-  background-color: #a2a2a2
 }
 #form {
   margin: 20px 0px;
   width: 350px;
   padding: 10px;
-  background-color: #7196fc;
-  box-shadow: 10px 10px 15px #110f12;
+  box-shadow: 5px 5px 10px #e5e5e5;
 }
-.input {
-  margin:15px;
+.form-element {
+  margin: 15px;
 }
+.input:not([type="submit"]) {
+  border: none;
+  resize: vertical;
+  outline: none;
+  width: 100%;
+  border-bottom: 1px solid #7c7c7c;
+  padding: 0px 0px 4px 0px;
+  margin-bottom: 1.4rem;
+}
+
+::-webkit-input-placeholder,
+:-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder {
+  color: #110f12;
+  opacity: 1;
+}
+
+textarea.input {
+  min-height: 4rem;
+  font-size: 1rem;
+}
+
 #button {
   padding: 10px 15px;
   margin: 5px auto;
@@ -260,17 +313,10 @@ input {
 #button:hover {
   box-shadow: 5px 5px 7px #646464;
 }
-#button:focus{
+#button:focus {
   box-shadow: 2px 2px 3px #646464;
 }
-.input textarea {
-  min-width: 100%;
-  max-width: 100%;
-  height: 7rem;
-  max-height: 15rem;
-  min-height: 4rem;
-  padding: 15px;
-}
+
 /*end of about*/
 /*footer*/
 #footer {
@@ -281,31 +327,33 @@ input {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top:2rem;
+  margin-top: 2rem;
 }
 #footer ul {
   width: 30%;
   margin: 25px auto;
   justify-content: space-between;
 }
-#footer p, #footer p a  {
+#footer p,
+#footer p a {
   color: #ffffff;
 }
-.fab, .fas {
+.fab,
+.fas {
   font-size: 2.2rem;
   color: #ffffff;
   transition: 0.3s;
 }
 .fejs:hover {
-  color: #4267B2;
+  color: #4267b2;
 }
 .jutjub:hover {
   color: #ff0000;
 }
 .githab:hover {
-  color: #007C00;
+  color: #007c00;
 }
 .sajitmap:hover {
   color: #a33f6b;
 }
-/*end of footer*/ 
+/*end of footer*/

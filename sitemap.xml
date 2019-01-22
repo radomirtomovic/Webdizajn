@@ -7,25 +7,31 @@
     <priority>1</priority>
   </url>
   <url>
-    <loc>https://jazz-theory.azurewebsites.net/index</loc>
+    <loc>https://jazz-theory.azurewebsites.net/index.html</loc>
     <lastmod>2018-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>https://jazz-theory.azurewebsites.net/history</loc>
+    <loc>https://jazz-theory.azurewebsites.net/history.html</loc>
     <lastmod>2018-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jazz-theory.azurewebsites.net/theory</loc>
+    <loc>https://jazz-theory.azurewebsites.net/theory.html</loc>
     <lastmod>2018-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jazz-theory.azurewebsites.net/about</loc>
+    <loc>https://jazz-theory.azurewebsites.net/contact.html</loc>
+    <lastmod>2018-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jazz-theory.azurewebsites.net/author.html</loc>
     <lastmod>2018-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
