@@ -165,10 +165,10 @@ input {
   margin: 0 auto;
 }
 .historyLesson h1,
-.historyLesson h3 {
+.historyLesson h2 {
   text-align: center;
 }
-.historyLesson h3 {
+.historyLesson h2 {
   margin-bottom: 15px;
   margin-top: 15px;
   font-size: 1.7rem;
